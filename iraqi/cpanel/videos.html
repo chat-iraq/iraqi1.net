@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>لوحة التحكم</title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/bootstrap-rtl.min.css" rel="stylesheet"/>
+        <!-- Font Awsome Icons -->
+       	<link href="css/font-awesome.min.css" rel="stylesheet"/>
+        <!-- My Style -->
+        <link href="css/admin.css" rel="stylesheet"/>
+        <!-- Favorite Icon -->
+        <link href="img/icon.png" rel="shortcut icon" type="image/x-icon"/>
+		<link href="img/icon.png" rel="icon" type="image/x-icon"/>
+		<!-- ckeditor cdn -->
+		<script src="//cdn.ckeditor.com/4.5.8/full/ckeditor.js"></script>
+  </head>
+  <body>
+  	<div class="container">
+  		<div class="header row">
+  					<div class="col-md-3 logo">
+  						<a href="<?php echo APP_URL;?>">
+  							<img src="img/logo.png" alt="Logo" title="Logo"/>
+  						</a>
+  					</div>
+  					<div class="col-md-4 col-md-push-5">
+  						<h1>
+  						<a href="index.html">
+  							لوحة التحكم
+  						</a>
+  						</h1>
+  					</div>
+  		</div>
+  		<div class="row">
+            <!-- Start sidebar -->
+            <div class="col-sm-3 sidebar">
+                <ul class="list-unstyled">
+                    <li class="sel"><a href="index.html" class="btn"><i class="fa fa-dashboard"></i>لوحة التحكم</a></li>
+                    <li><a href="settings.html" class="btn"><i class="fa fa-cog"></i>الإعدادات</a></li>
+                    <li><a href="pages.html" class="btn"><i class="fa fa-newspaper-o"></i>الصفحات</a></li>
+                    <li><a href="categories.html" class="btn"><i class="fa fa-sliders"></i>الأقسام</a></li>
+                    <li><a href="ads.html" class="btn"><i class="fa fa-bank"></i>الإعلانات</a></li>
+                    <li><a href="users.html" class="btn"><i class="fa fa-users"></i>عرض المستخدمين</a></li>
+                    <l><a href="comments.html" class="btn"><i class="fa fa-comment"></i>عرض التعليقات</a></li>
+                    <li><a href="videos.html" class="btn"><i class="fa fa-video-camera"></i>عرض الفيديوهات</a></li>
+                    <li><a href="sendInvitation.html" class="btn"><i class="fa fa-user-plus"></i>إعداد دعوة</a></li>
+                    <li><a href="contacts.html" class="btn"><i class="fa fa-envelope-o"></i>القائمة البريدية</a></li>
+                    <li><a href="upload.html" class="btn" target="_blank"><i class="fa fa-image"></i>عرض الصور</a></li>
+                    <li><a href="posts.html" class="btn"><i class="fa fa-edit"></i>عرض المواضيع</a></li>
+                    <li><a href="adminProfile.html" class="btn"><i class="fa fa-user"></i>تعديل بيانات المستخدم</a></li>
+                    <li><a href="../index.html" class="btn" target="_blank"><i class="fa fa-home"></i>عرض الموقع</a></li>
+                    <li><a href="#" class="btn"><i class="fa fa-share"></i>تسجيل الخروج</a></li>
+                </ul>
+            </div>
+            <!-- End sidebar -->
+            <!-- Start main-content -->
+            <div class="col-sm-9 main-content">
+                <div class="content"> 
+                    <h2>إضافة فيديو جديد</h2>
+                    <div class="alert alert-success">تم حفظ البيانات بنجاح</div>
+                    <div class="alert alert-danger">لم يتم حفظ البيانات أعد المحاولة</div>
+                    <form role="form" method="POST" enctype="application/x-www-form-urlencoded">
+                        <div class="form-group">
+                            <label for="title">العنوان :</label>
+                            <input type="text" name="title" id="title" class="form-control" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="video">كود الفيديو :</label>
+                            <textarea style="direction: ltr" name="video" id="video" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" name="submit" class="btn btn-lg"><i class="fa fa-save"></i> حفظ</button>
+                    </form>
+                    <h2>عرض الفيديوهات</h2>
+                    <a href="#" class="btn btn-primary">إضافة فيديو >></a>
+                    <table class="table table-bordered table-striped">
+                        <tr>
+                            <th>#</th>
+                            <th>العنوان</th>
+                            <th>الفيديو</th>
+                            <th>تعديل</th>
+                            <th>حذف</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</td>
+                            <td><iframe width="560" height="315" src="https://www.youtube.com/embed/gsqHIfcmIKM" frameborder="0" allowfullscreen=""></iframe></td>
+                            <td><a href="#"><i class="fa fa-edit"></i></a></td>
+                            <td><a href="#"><i class="fa fa-close"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</td>
+                            <td><iframe width="560" height="315" src="https://www.youtube.com/embed/gsqHIfcmIKM" frameborder="0" allowfullscreen=""></iframe></td>
+                            <td><a href="#"><i class="fa fa-edit"></i></a></td>
+                            <td><a href="#"><i class="fa fa-close"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</td>
+                            <td><iframe width="560" height="315" src="https://www.youtube.com/embed/gsqHIfcmIKM" frameborder="0" allowfullscreen=""></iframe></td>
+                            <td><a href="#"><i class="fa fa-edit"></i></a></td>
+                            <td><a href="#"><i class="fa fa-close"></i></a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- End main-content -->
+        </div>
+        <!-- Start Footer -->
+        <div class="clearfix"></div>
+
+        <div class="footer">
+            &copy 2016 All Rights Reserved To <span>قالب رسالة</span>
+        </div>      
+        <!-- End Footer -->
+    
+        <!-- Call jQuery file -->
+	    <script src="js/jquery-2.1.4.min.js"></script>
+	    <!-- Call bootstrap.js file -->
+		<script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/admin.js"></script>
+  </body>
+</html>

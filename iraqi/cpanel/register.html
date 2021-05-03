@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>لوحة التحكم</title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/bootstrap-rtl.min.css" rel="stylesheet"/>
+        <!-- Font Awsome Icons -->
+       	<link href="css/font-awesome.min.css" rel="stylesheet"/>
+        <!-- My Style -->
+        <link href="css/admin.css" rel="stylesheet"/>
+        <!-- Favorite Icon -->
+        <link href="img/icon.png" rel="shortcut icon" type="image/x-icon"/>
+		<link href="img/icon.png" rel="icon" type="image/x-icon"/>
+		<!-- ckeditor cdn -->
+		<script src="//cdn.ckeditor.com/4.5.8/full/ckeditor.js"></script>
+  </head>
+  <body>
+  	<div class="container">
+  		<div class="header row">
+  					<div class="col-md-3 logo">
+  						<a href="<?php echo APP_URL;?>">
+  							<img src="img/logo.png" alt="Logo" title="Logo"/>
+  						</a>
+  					</div>
+  					<div class="col-md-4 col-md-push-5">
+  						<h1>
+  						<a href="index.html">
+  							لوحة التحكم
+  						</a>
+  						</h1>
+  					</div>
+  		</div>
+  		<div class="row">
+            <!-- Start sidebar -->
+            <div class="col-sm-3 sidebar">
+                <div class="block text-center">
+                    <p>مرحبا</p>
+                    <p>بك في </p>
+                    <p>لوحة</p>
+                    <p>التحكم</p>
+                </div>
+            </div>
+            <!-- End sidebar -->
+            <!-- Start main-content -->
+            <div class="col-sm-9 main-content">
+                <div class="content"> 
+                    <h2>إضافة مستخدم جديد</h2>
+                    <div class="alert alert-success">تم حفظ البيانات بنجاح</div>
+                    <div class="alert alert-danger">لم يتم حفظ البيانات أعد المحاولة</div>
+                    <form role="form" method="POST" enctype="application/x-www-form-urlencoded">
+                        <div class="form-group">
+                            <label for="first-name">الإسم الأول :</label>
+                            <input type="text" name="first-name" id="first-name" class="form-control" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">الإسم الثاني :</label>
+                            <input type="text" name="last-name" id="last-name" class="form-control" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="username">إسم المستخدم :</label>
+                            <input type="text" name="username" id="username" class="form-control" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني :</label>
+                            <input type="email" name="email" id="email" class="form-control" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">كلمة المرور :</label>
+                            <input type="password" name="password" id="password" class="form-control" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="password-bus">أعد كلمة المرور :</label>
+                            <input type="password" name="password-bus" id="password-bus" class="form-control" required/>
+                        </div>
+                        <button type="submit" name="save" class="btn btn-lg"><i class="fa fa-edit"></i> تسجيل</button>
+
+                    </form>
+                </div>
+            </div>
+            <!-- End main-content -->
+        </div>
+        <!-- Start Footer -->
+        <div class="clearfix"></div>
+
+        <div class="footer">
+            &copy 2016 All Rights Reserved To <span>قالب رسالة</span>
+        </div>      
+        <!-- End Footer -->
+    
+        <!-- Call jQuery file -->
+	    <script src="js/jquery-2.1.4.min.js"></script>
+	    <!-- Call bootstrap.js file -->
+		<script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/admin.js"></script>
+  </body>
+</html>

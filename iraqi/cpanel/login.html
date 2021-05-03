@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>لوحة التحكم</title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/bootstrap-rtl.min.css" rel="stylesheet"/>
+        <!-- Font Awsome Icons -->
+       	<link href="css/font-awesome.min.css" rel="stylesheet"/>
+        <!-- My Style -->
+        <link href="css/admin.css" rel="stylesheet"/>
+        <!-- Favorite Icon -->
+        <link href="img/icon.png" rel="shortcut icon" type="image/x-icon"/>
+		<link href="img/icon.png" rel="icon" type="image/x-icon"/>
+		<!-- ckeditor cdn -->
+		<script src="//cdn.ckeditor.com/4.5.8/full/ckeditor.js"></script>
+  </head>
+  <body>
+  	<div class="container">
+  		<div class="header row">
+  					<div class="col-md-3 logo">
+  						<a href="<?php echo APP_URL;?>">
+  							<img src="img/logo.png" alt="Logo" title="Logo"/>
+  						</a>
+  					</div>
+  					<div class="col-md-4 col-md-push-5">
+  						<h1>
+  						<a href="index.html">
+  							لوحة التحكم
+  						</a>
+  						</h1>
+  					</div>
+  		</div>
+  		<div class="row">
+            <!-- Start sidebar -->
+            <div class="col-sm-3 sidebar">
+                <div class="block text-center">
+                    <p>مرحبا</p>
+                    <p>بك في </p>
+                    <p>لوحة</p>
+                    <p>التحكم</p>
+                </div>
+            </div>
+            <!-- End sidebar -->
+            <!-- Start main-content -->
+            <div class="col-sm-9 main-content">
+                <div class="content">
+                    <div class="login">
+                        <h2>تسجيل الدخول</h2>
+                        <div class="alert alert-danger">خطأ في إدخال البيانات</div>
+                        <form role="form" method="POST">
+                            <div class="form-group has-feedback">
+                                <input type="text" name="username" placeholder="Username" class="form-control" required/>
+                                <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                            </div>
+                            <div class="form-group has-feedback">
+                                <input type="password" name="password" placeholder="password" class="form-control" required/>
+                                <span class="glyphicon glyphicon-star-empty form-control-feedback"></span>
+                            </div>
+                            <button type="submit" name="submit" class="btn"><i class="fa fa-sign-in"></i> تسجيل الدخول</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- End main-content -->
+        </div>
+        <!-- Start Footer -->
+        <div class="clearfix"></div>
+
+        <div class="footer">
+            &copy 2016 All Rights Reserved To <span>قالب رسالة</span>
+        </div>      
+        <!-- End Footer -->
+    
+        <!-- Call jQuery file -->
+	    <script src="js/jquery-2.1.4.min.js"></script>
+	    <!-- Call bootstrap.js file -->
+		<script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/admin.js"></script>
+  </body>
+</html>

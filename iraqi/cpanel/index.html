@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>لوحة التحكم</title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/bootstrap-rtl.min.css" rel="stylesheet"/>
+        <!-- Font Awsome Icons -->
+       	<link href="css/font-awesome.min.css" rel="stylesheet"/>
+        <!-- My Style -->
+        <link href="css/admin.css" rel="stylesheet"/>
+        <!-- Favorite Icon -->
+        <link href="img/icon.png" rel="shortcut icon" type="image/x-icon"/>
+		<link href="img/icon.png" rel="icon" type="image/x-icon"/>
+		<!-- ckeditor cdn -->
+		<script src="//cdn.ckeditor.com/4.5.8/full/ckeditor.js"></script>
+  </head>
+  <body>
+  	<div class="container">
+  		<div class="header row">
+  					<div class="col-md-3 logo">
+  						<a href="<?php echo APP_URL;?>">
+  							<img src="img/logo.png" alt="Logo" title="Logo"/>
+  						</a>
+  					</div>
+  					<div class="col-md-4 col-md-push-5">
+  						<h1>
+  						<a href="index.html">
+  							لوحة التحكم
+  						</a>
+  						</h1>
+  					</div>
+  		</div>
+  		<div class="row">
+            <!-- Start sidebar -->
+            <div class="col-sm-3 sidebar">
+                <div class="block text-center">
+                    <p>مرحبا</p>
+                    <p>بك في </p>
+                    <p>لوحة</p>
+                    <p>التحكم</p>
+                </div>
+            </div>
+            <!-- End sidebar -->
+            <!-- Start main-content -->
+            <div class="col-sm-9 main-content">
+                <div class="content"> 
+                    <div class="row text-center cpanel">
+                        <div class="col-sm-4 active">
+                            <a href="settings.html" class="item thumbnail">
+                                 <span>الإعدادات العامة</span>
+                                 <i class="fa fa-cog fa-fw fa-5x"></i>       
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="pages.html" class="item thumbnail">
+                                 <span>الصفحات</span>
+                                 <i class="fa fa-newspaper-o fa-fw fa-5x"></i>       
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="categories.html" class="item thumbnail">
+                                 <span>الأقسام</span>
+                                 <i class="fa fa-sliders fa-fw fa-5x"></i>       
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="ads.html" class="item thumbnail">
+                                 <span>الإعلانات</span>
+                                 <i class="fa fa-bank fa-fw fa-5x"></i>       
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="users.html" class="item thumbnail">
+                                 <span>عرض المستخدمين</span>
+                                 <i class="fa fa-users fa-fw fa-5x"></i>       
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="comments.html" class="item thumbnail">
+                                 <span>عرض التعليقات</span>
+                                 <i class="fa fa-comment fa-fw fa-5x"></i>       
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="videos.html" class="item thumbnail">
+                                 <span>عرض الفيديوهات</span>
+                                 <i class="fa fa-video-camera fa-fw fa-5x"></i>       
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="sendInvitation.html" class="item thumbnail">
+                                 <span>إعداد دعوة</span>
+                                 <i class="fa fa-user-plus fa-fw fa-5x"></i>       
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="contacts.html" class="item thumbnail">
+                                 <span>القائمة البريدية</span>
+                                 <i class="fa fa-envelope-o fa-fw fa-5x"></i>       
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="upload.html" class="item thumbnail">
+                                 <span>عرض الصور</span>
+                                 <i class="fa fa-image fa-fw fa-5x"></i>       
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="posts.html" class="item thumbnail">
+                                 <span>عرض المواضيع</span>
+                                 <i class="fa fa-edit fa-fw fa-5x"></i>       
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="adminProfile.html" class="item thumbnail">
+                                 <span>تعديل بيانات المستخدم</span>
+                                 <i class="fa fa-user fa-fw fa-5x"></i>       
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="../index.html" class="item thumbnail" target="_blank">
+                                 <span>عرض الموقع</span>
+                                 <i class="fa fa-home fa-fw fa-5x"></i>       
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#" class="item thumbnail">
+                                 <span>تسجيل الخروج</span>
+                                 <i class="fa fa-share fa-fw fa-5x"></i>       
+                            </a>
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <!-- End main-content -->
+        </div>
+        <!-- Start Footer -->
+        <div class="clearfix"></div>
+
+        <div class="footer">
+            &copy 2016 All Rights Reserved To <span>قالب رسالة</span>
+        </div>      
+        <!-- End Footer -->
+    
+        <!-- Call jQuery file -->
+	    <script src="js/jquery-2.1.4.min.js"></script>
+	    <!-- Call bootstrap.js file -->
+		<script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/admin.js"></script>
+  </body>
+</html>

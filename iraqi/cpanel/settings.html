@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>لوحة التحكم</title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/bootstrap-rtl.min.css" rel="stylesheet"/>
+        <!-- Font Awsome Icons -->
+       	<link href="css/font-awesome.min.css" rel="stylesheet"/>
+        <!-- My Style -->
+        <link href="css/admin.css" rel="stylesheet"/>
+        <!-- Favorite Icon -->
+        <link href="img/icon.png" rel="shortcut icon" type="image/x-icon"/>
+		<link href="img/icon.png" rel="icon" type="image/x-icon"/>
+		<!-- ckeditor cdn -->
+		<script src="//cdn.ckeditor.com/4.5.8/full/ckeditor.js"></script>
+  </head>
+  <body>
+  	<div class="container">
+  		<div class="header row">
+  					<div class="col-md-3 logo">
+  						<a href="<?php echo APP_URL;?>">
+  							<img src="img/logo.png" alt="Logo" title="Logo"/>
+  						</a>
+  					</div>
+  					<div class="col-md-4 col-md-push-5">
+  						<h1>
+  						<a href="index.html">
+  							لوحة التحكم
+  						</a>
+  						</h1>
+  					</div>
+  		</div>
+  		<div class="row">
+            <!-- Start sidebar -->
+            <div class="col-sm-3 sidebar">
+                <ul class="list-unstyled">
+                    <li class="sel"><a href="index.html" class="btn"><i class="fa fa-dashboard"></i>لوحة التحكم</a></li>
+                    <li><a href="settings.html" class="btn"><i class="fa fa-cog"></i>الإعدادات</a></li>
+                    <li><a href="pages.html" class="btn"><i class="fa fa-newspaper-o"></i>الصفحات</a></li>
+                    <li><a href="categories.html" class="btn"><i class="fa fa-sliders"></i>الأقسام</a></li>
+                    <li><a href="ads.html" class="btn"><i class="fa fa-bank"></i>الإعلانات</a></li>
+                    <li><a href="users.html" class="btn"><i class="fa fa-users"></i>عرض المستخدمين</a></li>
+                    <l><a href="comments.html" class="btn"><i class="fa fa-comment"></i>عرض التعليقات</a></li>
+                    <li><a href="videos.html" class="btn"><i class="fa fa-video-camera"></i>عرض الفيديوهات</a></li>
+                    <li><a href="sendInvitation.html" class="btn"><i class="fa fa-user-plus"></i>إعداد دعوة</a></li>
+                    <li><a href="contacts.html" class="btn"><i class="fa fa-envelope-o"></i>القائمة البريدية</a></li>
+                    <li><a href="upload.html" class="btn" target="_blank"><i class="fa fa-image"></i>عرض الصور</a></li>
+                    <li><a href="posts.html" class="btn"><i class="fa fa-edit"></i>عرض المواضيع</a></li>
+                    <li><a href="adminProfile.html" class="btn"><i class="fa fa-user"></i>تعديل بيانات المستخدم</a></li>
+                    <li><a href="../index.html" class="btn" target="_blank"><i class="fa fa-home"></i>عرض الموقع</a></li>
+                    <li><a href="#" class="btn"><i class="fa fa-share"></i>تسجيل الخروج</a></li>
+                </ul>
+            </div>
+            <!-- End sidebar -->
+            <!-- Start main-content -->
+            <div class="col-sm-9 main-content">
+                <div class="content"> 
+                    <h2>الإعدادات العامة</h2>
+                    <div class="alert alert-success">تم حفظ البيانات بنجاح</div>
+                    <div class="alert alert-danger">لم يتم حفظ البيانات أعد المحاولة</div>
+                    <a class="btn btn-success" href="register.html">أكمل التسجيل</a>
+                    <form role="form" method="POST" enctype="application/x-www-form-urlencoded">
+                        <div class="form-group has-feedback">
+                            <label for="site_name">إسم الموقع : </label>
+                            <input type="text" id="site_name" name="site_name" class="form-control" required placeholder="حقل إجباري"/>
+                            <span class="glyphicon glyphicon-star text-success form-control-feedback"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="site_fav_icon">رابط أيقونة الموقع :</label>
+                            <input type="url" id="site_fav_icon" name="site_fav_icon" class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="site_logo">رابط شعار الموقع :</label>
+                            <input type="url" id="site_logo" name="site_logo" class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="site_email">البريد الإلكتروني للموقع :</label>
+                            <input type="email" id="site_email" name="site_email" class="form-control"/>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <label for="site_author">الإسم الكامل : </label>
+                            <input type="text" id="site_author" name="site_author" class="form-control" required placeholder="حقل إجباري"/>
+                            <span class="glyphicon glyphicon-star text-success form-control-feedback"></span>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <label for="my_email">البريد الإلكتروني الشخصي : </label>
+                            <input type="email" id="my_email" name="my_email" class="form-control" required placeholder="حقل إجباري"/>
+                            <span class="glyphicon glyphicon-star text-success form-control-feedback"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="site_tags">الكلمات الدلالية :</label>
+                            <textarea id="site_tags" name="site_tags" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="site_desc">وصف الموقع :</label>
+                            <textarea id="site_desc" name="site_desc" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="copyrights">حقوق الموقع :</label>
+                            <select id="copyrights" name="copyrights" class="form-control">
+                                <option value="1">محفوظة</option>
+                                <option value="0">غير محفوظة</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="facebook">رابط الفايسبوك :</label>
+                            <input type="url" id="facebook" name="facebook" class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="twitter">رابط تويتر :</label>
+                            <input type="url" id="twitter" name="twitter" class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="google_plus">رابط google plus :</label>
+                            <input type="url" id="google_plus" name="google_plus" class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="youtube">رابط قناة يوتوب :</label>
+                            <input type="url" id="youtube" name="youtube" class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="rss">رابط التغذية rss :</label>
+                            <input type="url" id="rss" name="rss" class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="status">فتح وإغلاق الموقع أمام العموم :</label>
+                            <select id="status" name="status" class="form-control">
+                                <option value="1">متاح</option>
+                                <option value="0">غير متاح</option>
+                            </select>
+                        </div>
+                        <button type="submit" name="saveItems" class="btn btn-lg">حفظ !</button>
+                    </form>
+                </div>
+            </div>
+            <!-- End main-content -->
+        </div>
+        <!-- Start Footer -->
+        <div class="clearfix"></div>
+
+        <div class="footer">
+            &copy 2016 All Rights Reserved To <span>قالب رسالة</span>
+        </div>      
+        <!-- End Footer -->
+    
+        <!-- Call jQuery file -->
+	    <script src="js/jquery-2.1.4.min.js"></script>
+	    <!-- Call bootstrap.js file -->
+		<script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/admin.js"></script>
+  </body>
+</html>

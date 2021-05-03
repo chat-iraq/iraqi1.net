@@ -1,0 +1,253 @@
+/*
+    Author: Abdellah Yassine
+    Inc   : AbdoDesign
+    Email :	abdo_yasiny@hotmail.fr
+    Fb    :	https://www.facebook.com/blognetinarabic/
+*/
+/* Start General Rules */
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+body{
+    font-family: 'DroidArabicKufi',Tahoma;
+    background-color: #E4E4E4
+}
+a:focus{
+    outline: 0
+}
+.container{
+    background-color: #fff;
+    overflow: hidden;
+    border-right: 2px solid #ccc;
+    border-left: 2px solid #ccc
+}
+.form-control{
+    background-color: #EDEDED
+}
+.form-control:focus{
+    -moz-box-shadow: 0 0 1px 1px #89c132;
+         box-shadow: 0 0 1px 1px #89c132;
+    border: 1px solid #89c132;
+    background-color: #FFF
+}
+th,td{
+	text-align: center;
+	vertical-align: middle !important
+}
+td img {
+    width: 200px;
+    height: auto;
+}
+td iframe{
+	width: 200px;
+	height: auto
+}
+form .btn,
+p .btn{
+	background: #89C132;
+	border: 1px solid #89C132;
+	color: #FFF;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out
+}
+form .btn:hover,
+form .btn:focus,
+p .btn:hover,
+p .btn:focus{
+	background: #EDEDED;
+	color: #89C132;
+	outline: none
+}
+
+/* End General Rules */
+
+/* Start Header */
+.header {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #89C132;
+    border-bottom: 2px solid #777;
+}
+.header h1{
+	font-size: 40px
+}
+.header h1 a{
+	color: #FFF
+}
+.header h1 a:focus,.header h1 a:hover{
+	text-decoration: none
+}
+.header .logo{
+    padding: 0;
+    height: 80px
+}
+.header .logo a{
+    display: block;
+    width: 100%;
+    height: 100%
+}
+.header .logo a img{
+    width: 100%;
+    height: 100%
+}
+/* End Header */
+/* Start Navbar */
+.sidebar a{
+	overflow: hidden;
+	display: block;
+	background: #89c132;
+	color: #FFF;
+	margin: 10px 0;
+	font-size: 16px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out
+}
+.sidebar a:hover,
+.sidebar a:focus,
+.sidebar .sel a{
+	background: #777;
+	color: #FFF;
+	outline: none
+}
+.sidebar a .fa{
+	float: right;
+	color: #E4E4E4;
+	font-size: 18px
+}
+.sidebar .block{
+	background-color: #89c132;
+	border-left: 3px solid #89c132;
+	border-right: 3px solid #89c132;
+	position: relative
+}
+.sidebar .block:after{
+	content: '';
+	position: absolute;
+	top: 20px;
+	left: 0;
+	display: inline-block;
+	width: 20%;
+	height: 500px;
+	background: #639E08;
+	-moz-border-radius-bottomright: 50px;
+	     border-bottom-right-radius: 50px;
+	-moz-border-radius-topleft: 50px;
+	     border-top-left-radius: 50px;
+}
+.sidebar .block:before{
+	content: '';
+	position: absolute;
+	top: 20px;
+	right: 0;
+	display: inline-block;
+	width: 20%;
+	height: 500px;
+	background: #639E08;
+	-moz-border-radius-bottomleft: 50px;
+	     border-bottom-left-radius: 50px;
+	-moz-border-radius-topright: 50px;
+	     border-top-right-radius: 50px
+}
+.sidebar .block p{
+	color: #FFF;
+	font-size: 20px;
+	padding-top: 50px;
+	line-height: 57px
+}
+
+/* End Navbar */
+/* Start Content*/
+.cpanel{
+	padding-top: 10px;
+	padding-bottom: 10px
+}
+.cpanel .item{
+	background-color: #EDEDED;
+	cursor: pointer
+}
+.cpanel .thumbnail{
+	color: #89c132;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out
+}
+.cpanel .thumbnail:hover,
+.cpanel .thumbnail:focus,
+.cpanel .active .thumbnail{
+	-moz-box-shadow: 0 0 2px 1px #555;
+	     box-shadow: 0 0 2px 1px #555;
+	border: 1px solid #777 !important;
+	text-decoration: none;
+	color: #777;
+	outline: none
+}
+
+.cpanel .item span{
+	display: block
+}
+		/* Start Settings */
+.content{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	min-height: 700px
+}	
+.content h2 {
+    background: #89C132;
+    width: 320px;
+    padding: 5px 10px 5px;
+    -moz-border-radius: 70px 5px 5px 5px;
+         border-radius: 70px 5px 5px 5px;
+    border: 2px solid #CCC;
+    color: #FFF;
+    font-size: 20px;
+    margin-bottom: 30px
+}
+.content a{
+	margin-bottom: 20px
+}
+.content form label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px
+}
+
+.content form select{
+	font-size: 12px
+}
+
+.content .login{
+	width: 50%
+}
+.content .login span{
+	color: #666
+}
+		/* End Settings */
+		/* Start sendInvitation */
+.content div.code-inv{
+	display: none;
+	direction: ltr;
+	text-align:center;
+	margin-top: 50px
+}
+		/* End sendInvitation */
+		/* Start Ads */
+		
+		/* End Ads */
+/* End Content*/
+/* Start Footer */
+.footer{
+	background-color: #333;
+	padding: 20px 10px;
+	color: #FFF;
+	width: 100%;
+	direction: ltr;
+	font-size: 16px;
+	text-align: center
+}
+.footer span{
+	color: #89c132
+}
+/* End Footer */
